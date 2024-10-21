@@ -24,4 +24,6 @@ dist-ssr
 *.sw?
 
 
+
 /MegaBog2/.env
+.env
