@@ -128,10 +128,15 @@ export class Service{
     }
 
     getFilePreview(fileId){
-        return this.bucket.getFilePreview(
+        const featuredImageUrl = this.bucket.getFileView(
             conf.appwriteBucketId,
             fileId
-        )
+        ).href
+
+        console.log(featuredImageUrl);
+        return featuredImageUrl
+        
+        
     }
 }
 
